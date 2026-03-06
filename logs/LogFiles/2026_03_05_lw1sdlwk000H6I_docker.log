@@ -1,0 +1,45 @@
+2026-03-05T22:55:35.7510833Z State: Starting, Action: EstablishingSiteNetworks, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-05T22:55:40.1438705Z State: Starting, Action: StartingMsiContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-05T22:55:56.8246981Z State: Starting, Action: StartingSiteContainers, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: , DetailsLevel: INFO
+2026-03-05T22:55:56.8344903Z Container start method called.
+2026-03-05T22:55:56.8422401Z State: Starting, Action: PullingImage, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pulling image 10.1.0.4:13209/appsvc/python:3.12_20260203.2.tuxprod for app-fe35e-fe4ilr., DetailsLevel: INFO
+2026-03-05T22:55:56.8447364Z Establishing network.
+2026-03-05T22:55:56.8524633Z Pulling image: appsvc/python:3.12_20260203.2.tuxprod.
+2026-03-05T22:55:58.6783870Z Container is starting.
+2026-03-05T22:55:58.6861770Z State: Starting, Action: MountingVolumes, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Mounting volumes for app-fe35e-fe4ilr., DetailsLevel: INFO
+2026-03-05T22:55:58.6865104Z Establishing user namespace if not established already.
+2026-03-05T22:55:58.6866868Z Establishing network if not established already.
+2026-03-05T22:55:58.6868389Z Mounting volumes.
+2026-03-05T22:55:58.6961116Z Nested mountpoint 
+2026-03-05T22:55:58.7186161Z Nested mountpoint volatile/logs
+2026-03-05T22:55:58.8074104Z Nested mountpoint 
+2026-03-05T22:55:58.9428137Z Nested mountpoint 
+2026-03-05T22:55:58.9845473Z Nested mountpoint 
+2026-03-05T22:55:59.8294528Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Finished pulling container image and mounting volumes for app-fe35e-fe4ilr. Allocatinng the rest of the container resources to finish container creation., DetailsLevel: INFO
+2026-03-05T22:55:59.8380868Z Creating container.
+2026-03-05T22:55:59.8404080Z Creating pipes for streaming container io.
+2026-03-05T22:55:59.8413179Z Creating stdout named pipe at /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stdout_954874be61924e97a4696e3a998ecb58.
+2026-03-05T22:55:59.8699681Z Successfully created stdout named pipe at: /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stdout_954874be61924e97a4696e3a998ecb58.
+2026-03-05T22:55:59.8792285Z Opening named pipe /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stdout_954874be61924e97a4696e3a998ecb58 for reading in non-blocking mode.
+2026-03-05T22:55:59.8981691Z Successfully opened named pipe: /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stdout_954874be61924e97a4696e3a998ecb58.
+2026-03-05T22:55:59.8997574Z Successfully removed non-blocking flag from /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stdout_954874be61924e97a4696e3a998ecb58.
+2026-03-05T22:55:59.9189816Z Creating stderr named pipe at /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stderr_54387cd9a93845ca97055557a48d1d7d.
+2026-03-05T22:55:59.9213884Z Successfully created stderr named pipe at: /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stderr_54387cd9a93845ca97055557a48d1d7d.
+2026-03-05T22:55:59.9285346Z Opening named pipe /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stderr_54387cd9a93845ca97055557a48d1d7d for reading in non-blocking mode.
+2026-03-05T22:55:59.9295234Z Successfully opened named pipe: /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stderr_54387cd9a93845ca97055557a48d1d7d.
+2026-03-05T22:55:59.9296677Z Successfully removed non-blocking flag from /podr/container/pipe/c43be523b617_app-fe35e-fe4ilr/stderr_54387cd9a93845ca97055557a48d1d7d.
+2026-03-05T22:55:59.9299096Z Creating container with image: appsvc/python:3.12_20260203.2.tuxprod from registry: 10.1.0.6:13209 and fully qualified image name: 10.1.0.6:13209/appsvc/python:3.12_20260203.2.tuxprod
+2026-03-05T22:56:00.9436565Z Starting container: c43be523b617_app-fe35e-fe4ilr.
+2026-03-05T22:56:01.1245046Z Starting watchers and probes.
+2026-03-05T22:56:01.1409507Z Starting metrics collection.
+2026-03-05T22:56:01.1421605Z Container is running.
+2026-03-05T22:56:01.1422813Z State: Starting, Action: CreatingContainer, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-fe35e-fe4ilr successfully created and is running., DetailsLevel: INFO
+2026-03-05T22:56:01.9560889Z Container start method finished after 5102 ms.
+2026-03-05T22:56:02.0079959Z State: Starting, Action: InitiatingSiteWarmUpProbe, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Container app-fe35e-fe4ilr successfully created and is running., DetailsLevel: INFO
+2026-03-05T22:56:02.2558940Z State: Starting, Action: WaitingForSiteWarmUpProbeSuccess, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Pinging warmup path to ensure container is ready to receive requests., DetailsLevel: INFO
+2026-03-05T22:57:16.0638384Z Site startup probe succeeded after 73.3901814 seconds.
+2026-03-05T22:57:16.9836281Z State: Starting, Action: WarmUpProbeSucceeded, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site startup probe succeeded after 73.3901814 seconds., DetailsLevel: INFO
+2026-03-05T22:57:17.7837728Z Site is running with deployment version: 94bf3fb5-11af-4fae-b938-fdfded1becc0
+2026-03-05T22:57:17.7945514Z Site started.
+2026-03-05T22:57:17.8030345Z State: Started, Action: None, LastError: , LastErrorTimestamp: 01/01/0001 00:00:00, LastErrorDetails: , Details: Site started at 03/05/2026 22:57:17 (UTC), DetailsLevel: INFO
+2026-03-05T22:57:19.2076049Z Site is running with patch version PYTHON 3.12.12

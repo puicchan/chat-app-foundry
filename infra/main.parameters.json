@@ -1,0 +1,27 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "environmentName": {
+      "value": "${AZURE_ENV_NAME}"
+    },
+    "location": {
+      "value": "${AZURE_LOCATION}"
+    },
+    "azureAiFoundryEndpoint": {
+      "value": "${AZURE_AI_FOUNDRY_ENDPOINT}"
+    },
+    "azureAiAgentName": {
+      "value": "${AZURE_AI_AGENT_NAME}"
+    },
+    "azureAiAgentVersion": {
+      "value": "${AZURE_AI_AGENT_VERSION}"
+    },
+    "aiAccountResourceGroup": {
+      "value": "${AI_ACCOUNT_RESOURCE_GROUP}"
+    },
+    "aiAccountName": {
+      "value": "${AI_ACCOUNT_NAME}"
+    }
+  }
+}
