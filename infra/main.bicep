@@ -12,9 +12,9 @@ param location string
 @description('Tags to apply to all resources')
 param tags object = {}
 
-// Optional: Azure AI Foundry endpoint and agent ID (set via azd env set)
-@description('Azure AI Foundry endpoint URL')
-param azureAiFoundryEndpoint string = ''
+// Optional: Azure AI Project endpoint and agent ID (set via azd env set)
+@description('Azure AI Project endpoint URL')
+param azureAiProjectEndpoint string = ''
 
 @description('Azure AI Foundry Agent name')
 param azureAiAgentName string = ''
@@ -65,7 +65,7 @@ module appService 'modules/appservice.bicep' = {
       'azd-service-name': 'web'
     })
     appInsightsConnectionString: monitoring.outputs.appInsightsConnectionString
-    azureAiFoundryEndpoint: azureAiFoundryEndpoint
+    azureAiProjectEndpoint: azureAiProjectEndpoint
     azureAiAgentName: azureAiAgentName
     azureAiAgentVersion: azureAiAgentVersion
   }

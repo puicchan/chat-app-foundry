@@ -1,4 +1,4 @@
 flask>=3.0
 gunicorn>=22.0
-azure-ai-projects>=2.0.0b1
+azure-ai-projects>=2.1.0
 azure-identity>=1.17.0

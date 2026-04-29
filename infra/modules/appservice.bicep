@@ -15,8 +15,8 @@ param tags object = {}
 @description('Application Insights connection string')
 param appInsightsConnectionString string = ''
 
-@description('Azure AI Foundry endpoint URL')
-param azureAiFoundryEndpoint string = ''
+@description('Azure AI Project endpoint URL')
+param azureAiProjectEndpoint string = ''
 
 @description('Azure AI Foundry Agent name')
 param azureAiAgentName string = ''
@@ -61,8 +61,8 @@ resource appService 'Microsoft.Web/sites@2024-04-01' = {
           value: appInsightsConnectionString
         }
         {
-          name: 'AZURE_AI_FOUNDRY_ENDPOINT'
-          value: azureAiFoundryEndpoint
+          name: 'AZURE_AI_PROJECT_ENDPOINT'
+          value: azureAiProjectEndpoint
         }
         {
           name: 'AZURE_AI_AGENT_NAME'

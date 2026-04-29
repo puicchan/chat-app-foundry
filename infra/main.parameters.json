@@ -8,8 +8,8 @@
     "location": {
       "value": "${AZURE_LOCATION}"
     },
-    "azureAiFoundryEndpoint": {
-      "value": "${AZURE_AI_FOUNDRY_ENDPOINT}"
+    "azureAiProjectEndpoint": {
+      "value": "${AZURE_AI_PROJECT_ENDPOINT}"
     },
     "azureAiAgentName": {
       "value": "${AZURE_AI_AGENT_NAME}"
