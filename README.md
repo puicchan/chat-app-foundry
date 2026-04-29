@@ -1,4 +1,9 @@
 # Chat Web App for Azure AI Foundry Agent
+> [!IMPORTANT]
+> **Blog post:** [Azure Developer CLI (azd): Debug hosted AI agents from your terminal](https://devblogs.microsoft.com/azure-sdk/azd-ai-agent-logs-status/)
+>
+> Code has been updated 4/28/2026 so that it works with hosted agents ([v1.0 release of Microsoft Agent Framework](https://devblogs.microsoft.com/foundry/from-local-to-production-the-complete-developer-journey-for-building-composing-and-deploying-ai-agents/)).
+>
 
 A simple Flask web app with a chat window UI that calls an AI agent deployed to Azure AI Foundry. Designed for deployment to Azure App Service using `azd`.
 
@@ -35,9 +40,10 @@ simpleApp/
 ```bash
 cd src
 pip install -r requirements.txt
-set AZURE_AI_FOUNDRY_ENDPOINT="https://your-account.services.ai.azure.com/api/projects/your-project"
+set AZURE_AI_PROJECT_ENDPOINT="https://your-account.services.ai.azure.com/api/projects/your-project"
 set AZURE_AI_AGENT_NAME="your-agent-name"
 set AZURE_AI_AGENT_VERSION="1"
+set AZURE_TENANT_ID="your-tenant-id"
 python app.py
 ```
 
@@ -48,9 +54,10 @@ Open http://localhost:8000 in your browser.
 Before deploying, set the environment variables for your Foundry agent:
 
 ```bash
-azd env set AZURE_AI_FOUNDRY_ENDPOINT "https://your-account.services.ai.azure.com/api/projects/your-project"
+azd env set AZURE_AI_PROJECT_ENDPOINT "https://your-account.services.ai.azure.com/api/projects/your-project"
 azd env set AZURE_AI_AGENT_NAME "your-agent-name"
 azd env set AZURE_AI_AGENT_VERSION "3"
+azd env set AZURE_TENANT_ID "your-tenant-id"
 ```
 
 To enable automatic role assignment (recommended), also set your AI account details:
